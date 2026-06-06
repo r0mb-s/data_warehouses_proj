@@ -2,6 +2,12 @@
 
 A full-stack financial data warehouse that ingests market data from **Binance** (crypto) and **Yahoo Finance** (stocks, forex, ETFs, commodities), stores it in **Apache Cassandra**, and provides analytics, forecasting, risk analysis, Spark-compatible export, and an LLM-powered assistant via MCP.
 
+## Demo Video
+
+A full end-to-end demo video is included in this repository: **`video.mp4`**
+
+The demo covers the complete flow: data ingestion (Binance + Yahoo Finance) → Cassandra storage → REST API exploration → analytics (aggregation, trend, forecast, risk) → Spark analytics pipeline → LLM assistant via MCP.
+
 ---
 
 ## Architecture Overview
