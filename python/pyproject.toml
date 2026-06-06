@@ -12,13 +12,21 @@ dependencies = [
     "pydantic-settings>=2.5.0",
     "python-dotenv>=1.0.0",
     "mcp>=1.0.0",
+    "pyspark>=3.5.0",
 ]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
 
 [project.scripts]
 serve = "app.main:start"
 fill = "scripts.fill:main"
 mcp-serve = "app.mcp_server:main"
 assistant = "app.assistant:main"
+spark-analytics = "scripts.spark_analytics:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["setuptools>=75.0"]
